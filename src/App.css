@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&family=Roboto+Mono:wght@154&display=swap');
+body {
+  background: linear-gradient(
+    55.4deg,
+    #4c04b0,
+    #04042b,
+    #0f0e10
+  );
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  animation: gradient 9s ease infinite;
+  font-family: 'Comic Neue', cursive;
+  }
+
+@keyframes gradient {
+  0% {
+    background-position: 10% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: #d017a1;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Comic Neue', cursive;
+  margin-top: 90px;
+  transition: 0.2s;
+  font-size: 70px;
+}
+
+.list-planets{
+  display: flex;
+  justify-content: center;
+}
+
+.planet-card{
+  color: #d017a1;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
+  transition: 0.2s border;
+  height: 300px;
+}
+.planet-card:hover {
+  border: 1px solid #d017a1;
+  border-radius: 8px;
+  cursor: pointer;
+  background-image: url(./images/bg2.png);
+}
+
+.planet-card img {
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  width: 100%;
+  
+}
+
+.planet-card:hover img {
+  width: 300px;
+  height: 250px;
+  
+}
+
+/* ************************************ */
+
+.missions-container {
+  gap: 16px;
+  padding: 0 32px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mission-card {
+  border: 1px solid #d017a1;
+  color: #d017a1;
+  border-radius: 8px;
+  width: 150px;
+  min-width: fit-content;
+  padding: 16px 32px;
+  transition: 0.2s;
+  text-align: center;
+  
+  }
+
+.mission-card:hover {
+  border: 1px solid #e35bc1;
+  border-radius: 8px;
+  width: 200px;
+  background-image: url(./images/bg2.png);
+}
+
+footer {
+  margin-bottom: 32px;
+  text-align: center;
+  color: #d017a1;
+  font-size: large;
+}
